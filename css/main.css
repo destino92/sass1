@@ -1,3 +1,7 @@
+/* 1- When using a value at three different places or more
+ *    put it into a varibale.
+ *    You can also  use a variable for one value for readability.
+ */
 body {
   font-family: Verdana, Arial, sans-serif;
   color: #222222; }
