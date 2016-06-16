@@ -4,9 +4,9 @@
  *    You can also  use a variable for one value for readability.
  */
 
-@import "variables";
+@import "partials/variables";
 
-@import "mixins";
+@import "partials/mixins";
 
 @include fancy-links;
 
