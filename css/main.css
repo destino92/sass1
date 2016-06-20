@@ -4,6 +4,13 @@ a {
   font-style: italic;
   text-decoration: none; }
 
+.error, .critical-error {
+  color: red; }
+
+.critical-error {
+  bottom: 1px solid red;
+  font-weight: bold; }
+
 body {
   font-family: "Alegreya Sans", Arial, sans-serif;
   color: #222222;
@@ -27,12 +34,22 @@ a {
   a:hover {
     color: #ca510d; }
 
-.warning-button {
+.sub-title {
+  font-style: italic; }
+
+.sub-title {
+  font-size: 1.25em; }
+
+.warning-button, .cta-button {
   background-color: orange;
   color: #fff;
   padding: 8px 12px; }
-  .warning-button:hover {
+  .warning-button:hover, .cta-button:hover {
     background-color: #ffb733; }
+
+.cta-button {
+  border-radius: 6px;
+  font-weight: bold; }
 
 * html body {
   font-size: 125%; }

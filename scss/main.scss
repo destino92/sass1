@@ -8,6 +8,16 @@
 
 @include fancy-links;
 
+.error {
+  color: red;
+}
+
+.critical-error {
+  @extend .error;
+  bottom: 1px solid red;
+  font-weight: bold;
+}
+
 body {
   font-family: $text-font;
   color: $text-color;
@@ -38,10 +48,25 @@ a {
   }
 }
 
+%highlight {
+  font-style: italic;
+}
+
+.sub-title {
+  @extend %highlight;
+  @extend .foo !optional;
+  font-size: 1.25em;
+}
 
 .warning-button {
   @include warning;
   padding: 8px 12px;
+}
+
+.cta-button {
+  @extend .warning-button;
+  @include rounded;
+  font-weight: bold;
 }
 
 @include apply-to-ie-6 {
